@@ -28,7 +28,7 @@ const ActionsDiv: React.FC<IProps> = ({ setCreateOne, handleSearch }) => {
           </div>
           <div className="col-md-6 text-end">
             <button
-              className="btn btn-sm btn-dark rounded px-3"
+              className="btn btn-sm btn_common rounded px-3"
               onClick={() => setCreateOne(true)}
             >
               Add New Bill

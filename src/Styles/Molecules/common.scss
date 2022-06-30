@@ -76,3 +76,99 @@
     color: #d14d56;
   }
 }
+
+.btn_common {
+  background-color: #0faf51 !important;
+  border: 1px solid #0faf51 !important;
+  border-radius: 6px;
+  color: #fff !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #0faf51;
+    border: 1px solid #0faf51;
+    color: #fff;
+  }
+}
+
+.pardon {
+  color: #d14d56;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 13px;
+}
+
+.logout_btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 13px;
+  custom_btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  .btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: rgb(255, 27, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 27, 0, 1) 0%,
+      rgba(251, 75, 2, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-5:hover {
+    color: #f0094a;
+    background: transparent;
+    box-shadow: none;
+  }
+  .btn-5:before,
+  .btn-5:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #f0094a;
+    box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+      4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+  }
+  .btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+}

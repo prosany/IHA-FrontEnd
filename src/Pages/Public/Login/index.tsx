@@ -14,8 +14,8 @@ const Login: React.FC = () => {
   const history = useHistory();
   const dispatch = useDispatch<AppDispatch>();
   const initalState = {
-    email: "",
-    password: "",
+    email: "demo@gmail.com",
+    password: "12345678",
   };
 
   const handleSubmit = (values: any) => {

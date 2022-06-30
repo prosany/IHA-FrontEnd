@@ -121,6 +121,22 @@ const Home: React.FC = () => {
           email={email}
         />
       )}
+      <div className="pardon">
+        <div>
+          Dear Hiring Team, <br />
+          I'm a little confused, you are asking for login and signup or not, if
+          i have missed something, please pardon my mistake.
+        </div>
+      </div>
+      <div className="logout_btn">
+        <button
+          className="custom_btn btn-5"
+          type="button"
+          onClick={() => dispatch(storeUserData("", ""))}
+        >
+          <span>Logout</span>
+        </button>
+      </div>
     </React.Fragment>
   );
 };
