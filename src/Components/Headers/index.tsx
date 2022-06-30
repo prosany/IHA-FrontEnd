@@ -22,7 +22,7 @@ const Header: React.FC<IProps> = ({ data }) => {
               (total: number, item: any) => total + item?.paid_amount,
               0
             )
-          )}
+          ) || 0}
         </div>
       </div>
     </React.Fragment>
