@@ -22,7 +22,7 @@ jobs:
         run: yarn install --production
 
       - name: Build The Application
-        run: yarn run build
+        run: yarn run build --force
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2.3
