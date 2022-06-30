@@ -22,7 +22,6 @@ jobs:
         run: yarn install --force
 
       - name: Build The Application
-        run: yarn install --check-files
         run: yarn run build --production
 
       - name: Deploy to Netlify
