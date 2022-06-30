@@ -37,6 +37,18 @@ const CreateBilling: React.FC<IProps> = ({
   };
   const craeteBilling = async (values: any) => {
     try {
+      const instant = {
+        ...data,
+        results: [
+          ...data.results,
+          { ...values, updatedAt: new Date().toISOString() },
+        ],
+      };
+      mutate(
+        [`/billing-list?page=${pageNumber}&search=${search}`, token],
+        instant,
+        false
+      );
       const response = await post("/add-billing", values, {
         headers: {
           Authorization: `Bearer ${token}`,

@@ -20,6 +20,7 @@ interface IProps {
 }
 
 const ModifyBilling: React.FC<IProps> = ({
+  data,
   token,
   mutate,
   createOne,
@@ -38,6 +39,18 @@ const ModifyBilling: React.FC<IProps> = ({
   };
   const modifyBilling = async (values: any) => {
     try {
+      const instant = {
+        ...data,
+        results: [
+          ...data.results,
+          { ...values, updatedAt: new Date().toISOString() },
+        ],
+      };
+      mutate(
+        [`/billing-list?page=${pageNumber}&search=${search}`, token],
+        instant,
+        false
+      );
       const response = await post(
         `/update-billing/${deafultData.billing_id}`,
         values,

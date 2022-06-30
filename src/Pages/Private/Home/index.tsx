@@ -34,7 +34,7 @@ const Home: React.FC = () => {
   const deleteBilling = async (id: string) => {
     let dataMuation = {
       ...data,
-      results: data.results.filter((item: any) => item.id !== id),
+      results: data.results.filter((item: any) => item.billing_id !== id),
     };
     mutate(
       [`/billing-list?page=${pageNumber}&search=${search}`, token],
