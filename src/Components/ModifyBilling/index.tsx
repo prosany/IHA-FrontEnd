@@ -51,6 +51,7 @@ const ModifyBilling: React.FC<IProps> = ({
         instant,
         false
       );
+      setCreateOne(false);
       const response = await post(
         `/update-billing/${deafultData.billing_id}`,
         values,

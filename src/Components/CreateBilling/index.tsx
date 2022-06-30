@@ -49,6 +49,7 @@ const CreateBilling: React.FC<IProps> = ({
         instant,
         false
       );
+      setCreateOne(false);
       const response = await post("/add-billing", values, {
         headers: {
           Authorization: `Bearer ${token}`,
