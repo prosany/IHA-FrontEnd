@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:7645/api" || process.env.REACT_APP_API_URL,
+  baseURL:
+    "https://iha-backend.herokuapp.com/api" || process.env.REACT_APP_API_URL,
 });
 
 export const get = async (url: string, config?: any) => {
