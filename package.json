@@ -48,6 +48,7 @@
   },
   "scripts": {
     "start": "set PORT=8050 && react-scripts start",
+    "startPro": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
