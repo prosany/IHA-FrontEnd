@@ -151,7 +151,7 @@ const CreateBilling: React.FC<IProps> = ({
                     Phone <span className="required">*</span>
                   </label>
                   <Field
-                    type="tel"
+                    type="number"
                     name="phone"
                     id="phone"
                     placeholder="Enter your phone"
