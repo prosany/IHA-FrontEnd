@@ -1,0 +1,99 @@
+@import url("../Theme/theme.scss");
+
+.required {
+  color: #ff0000;
+  margin: 0 2px;
+  font-weight: 600;
+}
+
+.form_label {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--form-label-color);
+  margin: 0 0 10px;
+  display: block;
+}
+
+.form_control {
+  display: block;
+  border: 1px solid var(--form-border);
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--form-input-color);
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  background-color: var(--body-background) !important;
+  outline: none;
+  &:focus {
+    border: 1px solid #52c381c2;
+    box-shadow: 0px 0px 5px #52c38185;
+  }
+  &::placeholder {
+    color: #767676;
+    font-family: "Nunito", sans-serif;
+  }
+}
+
+.form_error {
+  border: 1px solid #ff4848 !important;
+  background-color: var(--body-background) !important;
+  color: #ff4848 !important;
+
+  &:focus {
+    border: 1px solid #ff4848aa;
+    box-shadow: 0px 0px 5px #ff48485f;
+    background-color: var(--body-background) !important;
+    color: #ff4848 !important;
+  }
+  &::placeholder {
+    color: #ff4848 !important;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--body-background) !important;
+  }
+}
+
+.error_texts {
+  color: #ff4848;
+  font-size: 12px;
+  margin: 0 0 8px 0;
+}
+
+.form_submit {
+  display: block;
+  border: 1px solid #0faf51;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  margin: 10px 0;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  background-color: #0faf51;
+  &:focus {
+    border: 1px solid #52c38187;
+    box-shadow: 0px 0px 5px #52c38147;
+  }
+  &:hover {
+    background-color: #0faf51;
+  }
+  &:disabled {
+    background-color: #52c381;
+    border: 1px solid #52c381;
+    color: #e6f3ff;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.checked {
+  color: #0faf51;
+}

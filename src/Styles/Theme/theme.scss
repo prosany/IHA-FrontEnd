@@ -1,0 +1,27 @@
+:root {
+  --body-background: #fafafa;
+
+  --auth-box-background: #fff;
+  --auth-heading-color: #2c2c2c;
+  --auth-benefit-color: #5c5c5c;
+
+  --form-border: #e8e8e8;
+  --form-label-color: #767676;
+  --form-hr: #e8e8e8;
+  --form-input-color: #111;
+  --form-useful-link-color: #5c5c5c;
+}
+
+[data-theme="dark"] {
+  --body-background: #242526;
+
+  --auth-box-background: #1a1a1a;
+  --auth-heading-color: #d5d5d5;
+  --auth-benefit-color: #b7b7b7;
+
+  --form-border: #363636;
+  --form-label-color: #b7b7b7;
+  --form-hr: #424242;
+  --form-input-color: #fff;
+  --form-useful-link-color: #b7b7b7;
+}
