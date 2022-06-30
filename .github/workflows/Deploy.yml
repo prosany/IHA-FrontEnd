@@ -19,10 +19,11 @@ jobs:
           node-version: 14.x
 
       - name: Install Apps Dependencies
-        run: npm install --force
+        run: yarn install --force
 
       - name: Build The Application
-        run: npm run build --force
+        run: yarn install --check-files
+        run: yarn run build --production
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2.3
