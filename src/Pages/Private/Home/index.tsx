@@ -125,7 +125,9 @@ const Home: React.FC = () => {
         <div>
           Dear Hiring Team, <br />
           I'm a little confused, you are asking for login and signup or not, if
-          i have missed something, please pardon my mistake.
+          i have missed something,
+          <br />
+          Please pardon my mistake.
         </div>
       </div>
       <div className="logout_btn">
