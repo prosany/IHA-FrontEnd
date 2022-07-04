@@ -22,7 +22,7 @@ jobs:
         run: yarn install --save-exact
 
       - name: Build The Application
-        run: yarn run build --prod
+        run: set CI = false && yarn run build --prod
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2.3
