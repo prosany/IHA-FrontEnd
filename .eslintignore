@@ -1,3 +1,16 @@
 build/
 src/
 *.tsx
+*.ts
+*.jsx
+*.js
+*.json
+*.md
+*.yml
+*.yaml
+*.css
+*.scss
+*.less
+*.html
+*.htm
+*.xml
