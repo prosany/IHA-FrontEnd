@@ -75,6 +75,12 @@ const Home: React.FC = () => {
     return () => clearTimeout(delayDebounceFn);
   }, [searchText]);
 
+  useEffect(() => {
+    if (error && error.response.status >= 400) {
+      dispatch(storeUserData("", ""));
+    }
+  }, [error]);
+
   return (
     <React.Fragment>
       <Header data={data} />
