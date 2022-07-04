@@ -140,6 +140,7 @@ const CreateBilling: React.FC<IProps> = ({
                         ? "form_error form_control"
                         : "form_control"
                     }
+                    disabled
                     value={email || ""}
                   />
                   <p className="error_texts">
