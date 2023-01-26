@@ -86,7 +86,7 @@ const TableData: React.FC<IProps> = ({
             ))}
       </CustomTable>
 
-      {billings.pagination.total > 10 && (
+      {billings?.pagination?.total > 10 && (
         <div className="d-flex justify-content-center my-3">
           <nav className="mt-3">
             <ul className="pagination">
