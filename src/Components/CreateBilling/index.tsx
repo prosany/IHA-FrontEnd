@@ -32,7 +32,7 @@ const CreateBilling: React.FC<IProps> = ({
   const initalState = {
     full_name: "",
     email: email,
-    phone: "",
+    phone: "01612000000",
     paid_amount: "",
   };
   const craeteBilling = async (values: any) => {
