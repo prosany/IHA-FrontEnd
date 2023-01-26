@@ -12,11 +12,11 @@ const Header: React.FC<IProps> = ({ data }) => {
       <div className="row shadow-sm px-5 py-3 w-100 m-auto">
         <div className="col-md-6">
           <Link to="/" className="ancor logo">
-            Instructor Hiring App
+            Instant Update
           </Link>
         </div>
         <div className="col-md-6 text-end">
-          Taid Total:{" "}
+          Taid Total:{" $"}
           {numberWithCommas(
             data?.results?.reduce(
               (total: number, item: any) => total + item?.paid_amount,
