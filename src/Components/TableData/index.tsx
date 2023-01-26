@@ -85,43 +85,46 @@ const TableData: React.FC<IProps> = ({
               </tr>
             ))}
       </CustomTable>
-      <div className="d-flex justify-content-center my-3">
-        <nav className="mt-3">
-          <ul className="pagination">
-            <li className="page-item">
-              <button
-                className="page-link"
-                onClick={() => handlePageChange(pageNumber - 1)}
-                disabled={pageNumber === 1}
-              >
-                <i className="fal fa-angle-left"></i> Prev
-              </button>
-            </li>
-            {pages.map((page: any) => (
-              <li
-                key={page}
-                className={`page-item ${pageNumber === page ? "active" : ""}`}
-              >
+
+      {billings.pagination.total > 10 && (
+        <div className="d-flex justify-content-center my-3">
+          <nav className="mt-3">
+            <ul className="pagination">
+              <li className="page-item">
                 <button
                   className="page-link"
-                  onClick={() => handlePageChange(page)}
+                  onClick={() => handlePageChange(pageNumber - 1)}
+                  disabled={pageNumber === 1}
                 >
-                  {page}
+                  <i className="fal fa-angle-left"></i> Prev
                 </button>
               </li>
-            ))}
-            <li className="page-item">
-              <button
-                className="page-link"
-                onClick={() => handlePageChange(pageNumber + 1)}
-                disabled={pageNumber === pages.length}
-              >
-                Next <i className="fal fa-angle-right"></i>
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </div>
+              {pages.map((page: any) => (
+                <li
+                  key={page}
+                  className={`page-item ${pageNumber === page ? "active" : ""}`}
+                >
+                  <button
+                    className="page-link"
+                    onClick={() => handlePageChange(page)}
+                  >
+                    {page}
+                  </button>
+                </li>
+              ))}
+              <li className="page-item">
+                <button
+                  className="page-link"
+                  onClick={() => handlePageChange(pageNumber + 1)}
+                  disabled={pageNumber === pages.length}
+                >
+                  Next <i className="fal fa-angle-right"></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      )}
     </>
   );
 };
